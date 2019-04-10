@@ -1,1 +1,71 @@
-@font-face{font-family:'roboto-thin';src:url('fonts/roboto/Roboto-Thin.ttf') format('truetype')}div#anonymousChatBox{width:285px;background-color:#4d4d4d;border:1px #4d4d4d solid;border-radius:2px}div#anonymousChatBox div#viewChat{height:375px;border-bottom:1px #b3b3b3 solid;background-color:#fff;padding:1px;padding:2px;font-family:'roboto-thin',Arial,serif}div#anonymousChatBox input{background-color:#666;border-radius:3px;border:0;margin-bottom:5px;margin-top:5px;color:white;font-family:'roboto-thin',Arial,serif}div#anonymousChatBox input#pseudo{width:80px;margin-left:5px}::placeholder{color:#ccc}div#anonymousChatBox button#envoyerMessage{background-image:url('img/envoyerIcon-gris.min.png');background-color:#4d4d4d;border:0;width:20px;height:20px;margin:2px;margin-bottom:5px}div#anonymousChatBox button#envoyerMessage:hover{background-image:url('img/envoyerIcon-blanc.min.png');transform:scale(1.09)}div#anonymousChatBox p.connectionError{color:#f66}
+/*CSS du mode dark*/
+/*La structure du css se fait en fonction de la structure html de la chatBox
+C'est à dire:
+Le gros div
+	La boite avec les anciens messages
+	Les 2 inputs
+	L'input pseudo
+	Le bouton
+		L'image du boutton*/
+@font-face
+{
+	font-family: 'roboto-thin';
+	src: url('fonts/roboto/Roboto-Thin.ttf') format('truetype');
+}
+div#anonymousChatBox
+{
+	width: 285px;
+	background-color: #4d4d4d;
+	border: 1px #4d4d4d solid;
+	border-radius: 2px;
+}
+div#anonymousChatBox div#viewChat
+{
+	height: 375px;
+	border-bottom: 1px #b3b3b3 solid;
+	background-color: #ffffff;
+	padding: 1px;
+	/*color: white;*/
+	padding: 2px;
+	font-family: 'roboto-thin', Arial, serif;	
+}
+div#anonymousChatBox input	
+{
+	background-color: #666666;
+	border-radius: 3px;
+	border: none;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	color: white;
+	font-family: 'roboto-thin', Arial, serif;
+}
+div#anonymousChatBox input#pseudo
+{
+	width: 80px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+::placeholder
+{
+	color: #cccccc;
+}
+div#anonymousChatBox button#envoyerMessage
+{
+	background-image: url('img/envoyerIcon-gris.min.png');
+	background-color: #4d4d4d;
+	border: none;
+	width: 20px;
+	height: 20px;
+	margin: 2px;
+	margin-bottom: 5px;
+}
+div#anonymousChatBox button#envoyerMessage:hover
+{
+	background-image: url('img/envoyerIcon-blanc.min.png');
+	transform: scale(1.09);
+}
+/* En cas de bug de connection*/
+div#anonymousChatBox p.connectionError
+{
+	color: #ff6666;
+}

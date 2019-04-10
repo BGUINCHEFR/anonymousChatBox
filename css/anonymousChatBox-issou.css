@@ -1,1 +1,92 @@
-@font-face{font-family:'roboto-thin';src:url('fonts/roboto/Roboto-Thin.ttf') format('truetype')}div#anonymousChatBox{width:290px;background-color:#f0a;border:5px #f0a solid;border-radius:10px}div#anonymousChatBox div#viewChat{transition-property:all;transition-duration:1s;height:375px;border-bottom:1px #b3b3b3 solid;background-color:#fff;padding:1px;color:black;padding:2px;font-family:'roboto-thin',Arial,serif}div#anonymousChatBox div#viewChat:hover{background-image:url('https://i.imgur.com/EgdE4vX.png');color:white;background-color:#f0a}div#anonymousChatBox input{transition-property:all;transition-duration:1s;background-color:#cce0ff;border-radius:3px;border:0;margin-bottom:5px;margin-top:3px;color:black;font-family:'roboto-thin',Arial,serif}div#anonymousChatBox input:hover{background-color:#f0a;color:#f0a;transform:translateX(183);transform:translateY(156);opacity:0}::placeholder{color:black}div#anonymousChatBox input#pseudo{width:80px;margin-left:5px}div#anonymousChatBox button#envoyerMessage{background-image:url('https://i.imgur.com/FQeOeai.png');background-color:#f0a;border:0;width:26px;height:20px;margin:2px;margin-bottom:5px;transition-property:transform;transition-duration:1s;transform:rotate(180deg)}div#anonymousChatBox button#envoyerMessage:hover{background-image:url('https://i.imgur.com/t4so2lN.png');transform:scale(1.09)}div#anonymousChatBox p.connectionError{color:#f66}
+/*CSS du mode issou*/
+/*La structure du css se fait en fonction de la structure html de la chatBox
+C'est à dire:
+Le gros div
+	La boite avec les anciens messages
+	Les 2 inputs
+	L'input pseudo
+	Le bouton
+		L'image du boutton*/
+@font-face
+{
+	font-family: 'roboto-thin';
+	src: url('fonts/roboto/Roboto-Thin.ttf') format('truetype');
+}
+div#anonymousChatBox
+{
+	width: 290px;
+	background-color: #ff00aa;
+	border: 5px #ff00aa solid;
+	border-radius: 10px;
+}
+div#anonymousChatBox div#viewChat
+{
+	transition-property: all;
+	transition-duration: 1s;
+	height: 375px;
+	border-bottom: 1px #b3b3b3 solid;
+	background-color: #ffffff;
+	padding: 1px;
+	color: black;
+	padding: 2px;
+	font-family: 'roboto-thin', Arial, serif;	
+}
+div#anonymousChatBox div#viewChat:hover
+{
+	background-image: url('https://i.imgur.com/EgdE4vX.png');
+	color: white;
+	background-color: #ff00aa;
+}
+div#anonymousChatBox input	
+{
+	transition-property: all;
+	transition-duration: 1s;
+	background-color: #cce0ff;
+	border-radius: 3px;
+	border: none;
+	margin-bottom: 5px;
+	margin-top: 3px;
+	color: black;
+	font-family: 'roboto-thin', Arial, serif;
+}
+div#anonymousChatBox input:hover
+{
+	background-color: #ff00aa;
+	color: #ff00aa;
+	transform: translateX(183);
+	transform: translateY(156);
+	opacity: 0;
+}
+::placeholder
+{
+	color: black;
+}
+div#anonymousChatBox input#pseudo
+{
+	width: 80px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+div#anonymousChatBox button#envoyerMessage
+{
+	background-image: url('https://i.imgur.com/FQeOeai.png');
+	background-color: #ff00aa;
+	border: none;
+	width: 26px;
+	height: 20px;
+	margin: 2px;
+	margin-bottom: 5px;
+	transition-property: transform;
+	transition-duration: 1s;
+	transform: rotate(180deg);
+}
+div#anonymousChatBox button#envoyerMessage:hover
+{
+	background-image: url('https://i.imgur.com/t4so2lN.png');
+	transform: scale(1.09);
+}
+/* En cas de bug de connection*/
+div#anonymousChatBox p.connectionError
+{
+	color: #ff6666;
+}

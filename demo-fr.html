@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>AnonymousChatBox - Demo en français</title>
+	<link rel="stylesheet" type="text/css" href="demo.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="night">night</div>
+			<div class="light">light</div>
+			<div class="dark">dark</div>
+			<div class="bigchef">bigchef</div>
+			<div class="orange">orange</div>
+		</nav>
+		<div id="banniere"><h1>Anonymous chatBox - Night</h1></div>
+	</header>
+	<section>
+		<article>
+			<p>Anonymous ChatBox est un plugin JQuery qui permet d'intégrer une chatBox dans une page html, il fonctionne en javascript et il est asychrome, cela veux dire qu'il peut fonctionner sans le rafraichissement de la page et ne bloque pas la page lors de son fonctionnement.</p>
+			<h2 class="souligne">Pour les dévellopeurs :</h2>
+			<p>Le code html(seulement html !) du chat se trouve dans "anonymousChatBox.html"
+				<br>
+				La page php qui traite les données envoyées par le chat est "anonymousChatBox.php"
+				Le javascript du plugin se trouve dans "anonymousChatBox.js"
+				<br>
+				Les différents styles css se trouvent dans le fichier "css".
+				<br>
+				Le refresh a lieu toutes les 4 secondes, pour modifier cette durée contactez moi ou changer la dans le fichier javascript</p>
+			<h2>Comment l'intégrer?</h2>
+			<p>avec la méthode <span class="code">.anonymousChatBox();</span>
+				/!/ Attention cela demande d'intégrer jquery /!/.
+				<br>Pour cela il suffit d'intégrer le code suivant dans votre page html avant anonymousChatBox: <span class="code">&#60;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"&#62;&#60;/script&#62;</span>
+				<br>Secondement il suffit d'intégrer le chat: C'est simple, il suffit de mettre le script juste après le jquery:<span class="code">&#60;script type="text/javascript" src="anonymousChatBox.js"&#62;&#60;/script&#62;</span>
+				Vous devriez éxécuter votre code comme ceci:
+			</p>
+				<br><div class="code">$(function()
+				<br>{
+				<br>  $('sel').anonymousChatBox('style', 'urlChat', 'anonymousChatBoxFiles', 'langue')
+				<br>}</div>				
+			<p>
+				</br><span class="souligne">sel:</span>selecteur css (tuto : 'https://developer.mozilla.org/fr/docs/Web/CSS/S%C3%A9lecteurs_CSS')
+				</br><span class="souligne">.anonymousChatBox:</span> methode pour faire afficher le chat
+				</br><span class="souligne">style:</span> vous avez plusieurs choix du style:
+			</p>
+				<ul id="styles">
+				<div>
+					<li>-night, par défaut un mode nuit</li><a href="#chatDemo" class="night">Essayer</a>
+				</div>
+				<div>
+					<li>-light, mode jour</li><a href="#chatDemo" class="light">Essayer</a>
+				</div>
+				<div>
+					<li>-dark, mode jour avec du noir</li><a href="#chatDemo" class="dark">Essayer</a>
+				</div>
+				<div>
+					<li>-bigchef, bleu/blanc, aux couleurs du créateur</li><a href="#chatDemo" class="bigchef">Essayer</a>
+				</div>
+				<div>
+					<li>-orange, orange/blanc</li><a href="#chatDemo" class="orange">Essayer</a>
+				</div>
+				<div>
+					<li>-secret, a vous de le trouver !(celui qui le trouve en premier à le droit à l'implantation gratuite sur son site.)</li><p>A vous de trouver !</p>
+				</div>
+				</ul>
+			<p>
+				</br><span class="souligne">urlChat:</span>url du chat, par défaut: 'derniersMessages.htm'
+				<br>!/! Attention, si vous mettez pas un type de requête (http par exemple), le chat s'actualiseras pas en direct.(il est pas mit par défaut)
+				<br><span class="souligne">anonymousChatBoxFiles:</span>, l'url du fichier "anonymousChatBox", si vous indiquez pas alors que votre fichier est en dehors de se dossier, sa ne fonctionne pas.
+			</p>
+			<h2>Me contacter</h2>
+			<p>
+				Matheo Guinche
+				<br>tel: 07 81 94 12 27, Si je réponds pas, laissez moi un message.
+				<br><span class="souligne">mail:</span> <a href="mailto:matheoguinche-dev@hotmail.com">matheoguinche-dev@hotmail.com</a>
+				<br><span class="souligne">Discord:</span> BigChef#8943, envoyez moi directement un Message privé.
+			</p>
+			</article>
+		<aside id="chatDemo"></aside>
+	</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="anonymousChatBox.js"></script>
+	<script type="text/javascript" src="demo.js"></script>	
+</body>
+</html>
